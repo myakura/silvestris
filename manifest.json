@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Silvestris",
+	"version": "0.0.1",
+	"description": "Blockify links",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www3.nhk.or.jp/news/*",
+				"https://*.watch.impress.co.jp/*"
+			],
+			"css": ["silvestris_content.css"]
+		}
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{64bbc133-f196-4d71-8668-5a59213609fb}",
+			"strict_min_version": "117.0"
+		}
+	}
+}
