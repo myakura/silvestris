@@ -1,13 +1,14 @@
 {
 	"manifest_version": 3,
 	"name": "Silvestris",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Blockify links",
 	"content_scripts": [
 		{
 			"matches": [
 				"https://www3.nhk.or.jp/news/*",
-				"https://*.watch.impress.co.jp/*"
+				"https://*.watch.impress.co.jp/*",
+				"https://www.amazon.co.jp/hz/wishlist/ls/*"
 			],
 			"css": ["silvestris_content.css"]
 		}
