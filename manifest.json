@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
 	"name": "Silvestris",
-	"version": "0.0.2",
-	"description": "Blockify links",
+	"version": "0.0.3",
+	"description": "My user stylesheets",
 	"content_scripts": [
 		{
 			"matches": [
@@ -10,7 +10,11 @@
 				"https://*.watch.impress.co.jp/*",
 				"https://www.amazon.co.jp/hz/wishlist/ls/*"
 			],
-			"css": ["silvestris_content.css"]
+			"css": ["silvestris_content_blockify_links.css"]
+		},
+		{
+			"matches": ["https://zenn.dev/*"],
+			"css": ["silvestris_content_pre_lh.css"]
 		}
 	],
 	"browser_specific_settings": {
